@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterprise MITRE ATT&CK Matrix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+    <h2 style="font-size:24px; font-weight:600; margin-bottom:12px;">Enterprise MITRE ATT&CK Matrix</h2>
+    <p id="loadStatus" style="color:#9e9e9e;">Initializing…</p>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <h1>Enterprise MITRE ATT&CK Matrix</h1>
+    </div>
+    <div class="header-right">
+      <button class="theme-btn" id="btnTheme" title="Toggle Theme" aria-label="Toggle Theme">
+        Toggle Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- Matrix Layout -->
+  <div id="matrix-container">
+  </div>
+
+  <!-- Detail Drawer -->
+  <div id="detailDrawer" aria-hidden="true" role="dialog" aria-label="Technique Details">
+    <button class="drawer-close" id="drawerClose" aria-label="Close Details">&times;</button>
+    <div class="drawer-id" id="drawerId"></div>
+    <h3 class="drawer-title" id="drawerTitle"></h3>
+    <div class="drawer-desc" id="drawerDesc"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
