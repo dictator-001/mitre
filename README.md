@@ -22,3 +22,5 @@ Then navigate to `http://localhost:8080`
 
 ## Deployment
 This project is natively compatible with **GitHub Pages**. Simply upload to a public repository and enable GitHub Pages on the `main` branch to host it for free.
+
+https://dictator-001.github.io/mitre/
